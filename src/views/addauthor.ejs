@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%=title%>
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <%for(i=0;i<nav.length;i++){%>
+                        <li>
+                            <a href="<%=nav[i].link%>">
+                                <%=nav[i].name%>
+                            </a>
+                        </li>
+                        <%}%>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <form class="ty" action="/addauthor/add" method="POST">
+        
+        <h1><strong>Add Author</strong> </h1>
+
+        <div class="form-group">
+            <input type="text"  placeholder="Enter Author's Name" name = "name" required />
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Book's Name"  name = "book" required />
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter Genre" required name = "genre"/>
+        </div>
+        <h4><strong>Description</strong></h4>
+        <div class="form-group desc">
+            <textarea id="buy" required="" name = "description"></textarea>
+        </div>
+
+        <div class="form-group desc">
+            <label for="images">Upload Image</label>
+            <input type="file" id="img" required="required" name = "image" accept="image/*" />
+            <div class="file-dummy">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id ="po">Add Author</button>
+        </div>
+
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+.loginbox{
+	width: 320px;
+	height :340px;
+	background: #000;
+	color :#fff;
+	top :50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 40px 30px;
+	margin-top: 70px;
+}
+.avatar
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position : absolute;
+	top : -50px ;
+	left: calc(50%,-50px);
+}
+h1{
+	margin :0;
+	padding: 0 0 20px;
+	text-align:  center;
+	font-size: 25px;
+}
+.loginbox label{
+	margin-top: 0;
+	padding: 0;
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: white;
+}
+.loginbox input{
+	width: 100%;
+
+	
+	
+}
+.loginbox input[type = "text"],input[type = "password"],input[type = "tel"]
+{
+	border :none;
+	border-bottom : 1px solid #fff;
+	background: transparent;
+	outline :none;
+	height :35px;
+	color :white;
+	font-size :16px;
+	
+
+}
+.loginbox input[type = "submit"]
+{
+	border: none;
+	outline:  none;
+	height: 40px;
+	background :#f77c16;
+	color: #e8e0da;
+	font-size: 18px;
+	border-radius: 20px;
+	margin-top: 53px;
+	
+}
+.loginbox input[type = "Submit"]:hover
+{
+	cursor :pointer;
+	background : #e33112;
+	color :#000;
+}
+.loginbox a{
+	text-decoration: none;
+	color :#ccc3c2;
+	font-size:15px;
+	line-height: 20px;
+
+}
+.loginbox a:hover
+{
+	color:#2711b8;
+}
+.form-control{
+	margin-bottom: 20px;
+	position: relative;
+
+}
+.form-control.success input{
+	border-bottom-color: #2ecc71;
+}
+.form-control.error input{
+	border-bottom-color: #e74c3c;
+}
+.form-control i{
+	position: absolute;
+	right: 10px;
+	top :48px;
+	filter: brightness(520%);
+	visibility: hidden;
+}
+.form-control{
+	background: transparent;
+	border: none;
+}
+.form-control small{
+	filter: brightness(277%);
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	margin-top: 40px;
+
+}
+.form-control.error small{
+	visibility: visible;
+}
+
+.form-control.success i.fa-check-circle
+{
+        color: green;
+        visibility:visible;
+}
+.form-control.error i.fa-times-circle
+{
+	color: red;
+	visibility:visible;
+}
+#footer
+{
+	margin-top: 320px;
+}
+
+#pass{
+	margin-top: 17px;
+}
